@@ -205,3 +205,12 @@ h3{
     justify-content: center;
     font-style: italic;
 }
+.connect{
+    background-color: #E3007E;
+    border: 0px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    width: 50%;
+    height: 3.5em;
+}
