@@ -8,7 +8,7 @@
 
 .top {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .toplogo {
@@ -34,8 +34,6 @@
 
 .topnav {
     display: flex;
-    justify-content: center;
-    margin-left: 20em;
 }
 
 .question {
@@ -195,7 +193,8 @@ h3 {
     margin-top: 1em;
     margin-left: 2em;
     width: 68%;
-    height: 10%;
+    height: 2.7em;
+    border: 0;
 }
 
 .bloc {
@@ -269,4 +268,44 @@ h5{
 
 .if{
     width: 5.5em;
+}
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+    .topnav{
+        display: none;
+    }    
+    .top{
+        justify-content: start;
+    }
+    .barre{
+        height: 0.5em;
+    }
+    .vertf{
+        background-color: #87BB34;
+    }
+    .box{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .box1{
+        margin: auto;
+        margin-top: 1em;
+    }
+    .box2{
+        margin: auto;
+    }
+    .chemin{
+        display: none;
+    }
+    h1{
+        margin: 1rem;
+        margin-bottom: 1em;
+    }
+    .i{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
 }
