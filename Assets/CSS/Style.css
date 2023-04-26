@@ -9,6 +9,7 @@
 .top {
     display: flex;
     justify-content: space-evenly;
+    height: 7.9em;
 }
 
 .toplogo {
@@ -63,7 +64,7 @@
 
 .chemin {
     display: flex;
-    margin-left: 10em;
+    margin-left: 22%;
     color: #5a545a;
 }
 
@@ -96,7 +97,7 @@ h1 {
     text-align: center;
     color: #5a545a;
     margin: 1.5em;
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 600;
 }
 
@@ -116,7 +117,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 24em;
+    width: 21em;
     padding: 10px;
 }
 
@@ -132,21 +133,29 @@ h1 {
 
 .box2 {
     background-color: #00A0E0;
-    width: 24em;
+    width: 21em;
     color: white;
     padding: 10px;
+    justify-content: center;
 }
 
 h2 {
     color: #5a545a;
     text-align: center;
-    margin-top: 1.5em;
-    font-size: 1.7em;
+    margin-top: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
+h3 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    margin-top: 0px;
+}
+
 h4 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     text-align: center;
     margin-top: 1.5em;
     font-weight: 600;
@@ -161,21 +170,16 @@ h4 {
     margin: 10px;
     margin-top: 1.5em;
     color: white;
+    font-size: 0.9em;
 }
 
 .create {
     background-color: #00A0E0;
     border: 2px;
-    width: 40%;
+    width: 55%;
     height: 3.5em;
     justify-content: center;
     margin-top: 6em;
-}
-
-h3 {
-    text-align: center;
-    color: white;
-    font-weight: 600;
 }
 
 .create:hover {
@@ -191,10 +195,12 @@ h3 {
 
 .id {
     margin-top: 1em;
-    margin-left: 2em;
-    width: 68%;
-    height: 2.7em;
+    margin-left: 2.5em;
+    width: 77%;
+    height: 3.5em;
     border: 0;
+    font-size: 0.85em;
+    font-weight: 500;
 }
 
 .bloc {
@@ -203,14 +209,45 @@ h3 {
 }
 
 .i {
+    position: relative;
     display: inline-flex;
     background-color: #F1F1F1;
     color: #5a545a;
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
     padding: 3px 10px;
     margin-left: 1em;
     border-radius: 60px;
     justify-content: center;
     font-style: italic;
+}
+
+.texte {
+    color: #E3007E;
+    position: absolute;
+    display: none;
+    background-color: white;
+    bottom: 2em;
+    width: 20em;
+    font-weight: 500;
+    padding: 3px;
+    font-size: 0.9em;
+}
+
+.identifiant {
+    display: flex;
+}
+
+.popover {
+    display: flex;
+}
+
+.i:hover {
+    cursor: pointer;
+}
+
+.i:hover .texte {
+    display: block;
 }
 
 .connect {
@@ -219,11 +256,11 @@ h3 {
     text-align: center;
     justify-content: center;
     margin-top: 1.5em;
-    width: 50%;
-    height: 3.5em;
+    width: 55%;
+    height: 3.3em;
 }
 
-.connect:hover{
+.connect:hover {
     background-color: #a8025d;
     cursor: pointer;
 }
@@ -231,6 +268,7 @@ h3 {
 .pwf {
     color: white;
     font-size: 0.8em;
+    font-weight: 600;
 }
 
 .idf {
@@ -240,72 +278,87 @@ h3 {
     margin-bottom: 1.5em;
 }
 
-footer{
+footer {
     background-color: #87BB34;
     color: white;
     text-align: center;
     padding: 1em;
     justify-content: center;
 }
-h5{
+
+h5 {
     font-size: 1.8em;
     font-weight: 600;
     margin: auto;
 }
 
-.bot{
+.bot {
     display: inline-flex;
     font-weight: 500;
     margin-top: 0.5em;
 }
 
-.choix{
+.choix {
     width: 20em;
     text-align: start;
     margin: auto;
     display: flex;
 }
 
-.if{
+.if {
     width: 5.5em;
 }
 
-@media screen and (min-width: 0px) and (max-width: 950px) {
-    .topnav{
+@media screen and (min-width: 0px) and (max-width: 920px) {
+    .topnav {
         display: none;
-    }    
-    .top{
+    }
+
+    .top {
         justify-content: start;
     }
-    .barre{
+
+    .barre {
         height: 0.5em;
     }
-    .vertf{
+
+    .vertf {
         background-color: #87BB34;
     }
-    .box{
+
+    .box {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .box1{
+
+    .box1 {
         margin: auto;
         margin-top: 1em;
     }
-    .box2{
+
+    .box2 {
         margin: auto;
     }
-    .chemin{
+
+    .chemin {
         display: none;
     }
-    h1{
+
+    h1 {
         margin: 1rem;
         margin-bottom: 1em;
     }
-    .i{
+
+    .i {
         display: none;
     }
-    footer{
+
+    footer {
         display: none;
+    }
+
+    .toplogo {
+        margin-top: 1em;
     }
 }
