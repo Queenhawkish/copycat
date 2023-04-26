@@ -8,8 +8,9 @@
 
 .top {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 7.9em;
+    margin-left: 5%;
 }
 
 .toplogo {
@@ -21,9 +22,14 @@
     width: 15em;
 }
 
+.topnav {
+    display: flex;
+    margin-right: 9%;
+}
+
 .lieu {
     width: 2em;
-    height: 2em;
+    height: 2.2em;
 }
 
 .centre {
@@ -31,10 +37,6 @@
     text-decoration: none;
     font-weight: 300;
     margin-top: 5em;
-}
-
-.topnav {
-    display: flex;
 }
 
 .question {
